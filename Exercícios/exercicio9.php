@@ -68,12 +68,14 @@
         <input type='submit' value='Calcular'>
     </form>
     <?php
+        if(isset($_POST['um']) and isset($_POST['dois']) and isset($_POST['tres']) and isset($_POST['quatro']) and isset($_POST['cinco']) and isset($_POST['seis']) and isset($_POST['sete']) and isset($_POST['oito']) and isset($_POST['nove']) and isset($_POST['dez']) and isset($_POST['onze']) and isset($_POST['doze']) and isset($_POST['treze']) and isset($_POST['quatorze'])){
         $livro = $_POST['livro'];
         $usuario = $_POST['usuario'];
         if($usuario == "P"){
             echo "Você tem 10 dias para devolver o livro: " . $livro;
         }if($usuario == "A"){
             echo "Você tem 3 dias para devolver o livro: " . $livro;
+    }
     }
     ?> 
     <br>
