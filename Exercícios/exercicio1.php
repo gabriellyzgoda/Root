@@ -11,6 +11,7 @@
         <input type='number' name='numero2' id='numero2'>
         <input type='submit' value='Somar'>
     <?php
+    if(isset($_POST['numero1']) and isset($_POST['numero2'])){
     $numero = $_POST['numero1'];
     $numerodois = $_POST['numero2'];
     $total = $numero + $numerodois;
@@ -20,6 +21,7 @@
     }else{
             echo "<br>";
             echo "Resposta: " . $total - 5;
+    }
     }
     ?> 
     <br>
